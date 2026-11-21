@@ -1,7 +1,7 @@
-# PictureGrid — Gesture Capture
+# fun_picture-grid — Gesture Capture
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Repository: picture_grid](https://img.shields.io/badge/Repository-picture__grid-blueviolet)](https://github.com/thulanesigasa/picture_grid)
+[![Repository: fun_picture-grid](https://img.shields.io/badge/Repository-fun__picture--grid-blueviolet)](https://github.com/thulanesigasa/fun_picture-grid)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES_Modules-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![MediaPipe](https://img.shields.io/badge/MediaPipe-v0.10.14-007FFF?logo=google&logoColor=white)](https://developers.google.com/mediapipe)
 [![HTML5](https://img.shields.io/badge/HTML5-Canvas_2D-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
@@ -37,7 +37,7 @@ flowchart TD
 
 ### Architecture Overview
 
-PictureGrid operates as a high-performance, single-threaded browser application utilizing a decoupled rendering and gesture classification loop:
+fun_picture-grid operates as a high-performance, single-threaded browser application utilizing a decoupled rendering and gesture classification loop:
 
 1. **Computer Vision Layer**: Utilizes Google MediaPipe Tasks Vision (`@mediapipe/tasks-vision@0.10.14`) via CDN. The `HandLandmarker` model tracks 21 3D hand landmarks per detected hand in real time against a mirrored video element.
 2. **Gesture Classification Engine**: Normalizes landmark Euclidean distance between the thumb tip (landmark 4) and index fingertip (landmark 8) against dynamic hand size ratios to identify pinch triggers, framing boundaries, and closed-fist gestures.
@@ -79,7 +79,7 @@ PictureGrid operates as a high-performance, single-threaded browser application 
 ## Directory Structure
 
 ```
-picture_grid/
+fun_picture-grid/
 ├── .gitignore              # Git ignore configuration
 ├── README.md               # Project documentation and architecture guide
 ├── index.html              # Application entry point and layout markup
@@ -110,8 +110,8 @@ picture_grid/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/thulanesigasa/picture_grid.git
-cd picture_grid
+git clone https://github.com/thulanesigasa/fun_picture-grid.git
+cd fun_picture-grid
 ```
 
 ### 2. Start a Local HTTP Server

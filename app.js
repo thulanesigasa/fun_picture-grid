@@ -151,7 +151,7 @@ function downloadPhotoStrip() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = `picture_grid_strip_${Date.now()}.png`;
+    link.download = `fun_picture-grid_strip_${Date.now()}.png`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -296,7 +296,7 @@ async function initHandLandmarker() {
     );
     return handLandmarker;
   } catch (gpuErr) {
-    console.warn("[PictureGrid] Failed with GPU delegate, retrying with CPU...", gpuErr);
+    console.warn("[fun_picture-grid] Failed with GPU delegate, retrying with CPU...", gpuErr);
   }
 
   try {
